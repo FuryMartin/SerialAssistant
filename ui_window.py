@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowcyhBAr.ui'
+## Form generated from reading UI file 'windowNaKupA.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.2
 ##
@@ -9,7 +9,6 @@
 ################################################################################
 
 from qt_core import *
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -165,11 +164,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.FRxBW)
 
-        self.pushButton_2 = QPushButton(self.widget_2)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-
-        self.verticalLayout_2.addWidget(self.pushButton_2)
-
 
         self.horizontalLayout_6.addWidget(self.widget_2)
 
@@ -305,22 +299,21 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.LSF)
 
-        self.pushButton = QPushButton(self.widget)
-        self.pushButton.setObjectName(u"pushButton")
-
-        self.verticalLayout.addWidget(self.pushButton)
-
         self.LRF.raise_()
         self.LMODE.raise_()
         self.LPW.raise_()
         self.LBW.raise_()
         self.LSF.raise_()
-        self.pushButton.raise_()
 
         self.horizontalLayout_6.addWidget(self.widget)
 
 
         self.verticalLayout_3.addWidget(self.widget_3)
+
+        self.Confirm_button = QPushButton(self.centralwidget)
+        self.Confirm_button.setObjectName(u"Confirm_button")
+
+        self.verticalLayout_3.addWidget(self.Confirm_button)
 
         self.IO_window = QTextEdit(self.centralwidget)
         self.IO_window.setObjectName(u"IO_window")
@@ -416,7 +409,6 @@ class Ui_MainWindow(object):
         self.FSK_bandwidth.setItemText(19, QCoreApplication.translate("MainWindow", u"200.0 kHz", None))
         self.FSK_bandwidth.setItemText(20, QCoreApplication.translate("MainWindow", u"250.0 kHz", None))
 
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u786e\u5b9a", None))
         self.LMODE.setTitle("")
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Lora\u6a21\u5f0f", None))
         self.Lora_mode.setText("")
@@ -473,6 +465,6 @@ class Ui_MainWindow(object):
         self.Lora_spreadingfactor.setItemText(5, QCoreApplication.translate("MainWindow", u"2048", None))
         self.Lora_spreadingfactor.setItemText(6, QCoreApplication.translate("MainWindow", u"4096", None))
 
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u786e\u5b9a", None))
+        self.Confirm_button.setText(QCoreApplication.translate("MainWindow", u"\u786e\u5b9a", None))
     # retranslateUi
 
