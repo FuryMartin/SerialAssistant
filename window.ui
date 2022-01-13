@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>385</width>
-    <height>457</height>
+    <height>483</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,6 +15,22 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QWidget" name="widget_4" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>选择端口</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="port_selector"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
     <item>
      <widget class="QWidget" name="widget_3" native="true">
       <layout class="QHBoxLayout" name="horizontalLayout_6">

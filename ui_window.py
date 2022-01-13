@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowNaKupA.ui'
+## Form generated from reading UI file 'windowJItSix.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.2
 ##
@@ -9,15 +9,33 @@
 ################################################################################
 
 from qt_core import *
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(385, 457)
+        MainWindow.resize(385, 483)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_3 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.widget_4 = QWidget(self.centralwidget)
+        self.widget_4.setObjectName(u"widget_4")
+        self.horizontalLayout = QHBoxLayout(self.widget_4)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.label_5 = QLabel(self.widget_4)
+        self.label_5.setObjectName(u"label_5")
+
+        self.horizontalLayout.addWidget(self.label_5, 0, Qt.AlignHCenter)
+
+        self.port_selector = QComboBox(self.widget_4)
+        self.port_selector.setObjectName(u"port_selector")
+
+        self.horizontalLayout.addWidget(self.port_selector)
+
+
+        self.verticalLayout_3.addWidget(self.widget_4)
+
         self.widget_3 = QWidget(self.centralwidget)
         self.widget_3.setObjectName(u"widget_3")
         self.horizontalLayout_6 = QHBoxLayout(self.widget_3)
@@ -341,6 +359,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u9009\u62e9\u7aef\u53e3", None))
         self.FMODE.setTitle("")
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"FSK\u6a21\u5f0f", None))
         self.FSK_mode.setText("")
