@@ -4,12 +4,14 @@ from ui_window import Ui_MainWindow
 import sys
 import serial
 import serial.tools.list_ports
+import os
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.setWindowTitle("SerialAssistant")
         self.show()
 
         #设置按钮互斥
@@ -81,7 +83,7 @@ class MainWindow(QMainWindow):
             num = len(data)
             if data.decode('utf-8') != '':
             #self.received_data += data.decode('utf-8')
-                self.ui.IO_window.append("RECEIVE:\t{}".format(data.decode('utf-8')))
+                self.ui.IO_window.append(data.decode('utf-8'))
             
             text_cursor =self.ui.IO_window.textCursor()
             text_cursor.movePosition(text_cursor.End)
@@ -118,7 +120,9 @@ if __name__ == "__main__":
     # APPLICATION
     # ///////////////////////////////////////////////////////////////
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon("icon.ico"))
+    current_dir = os.path.dirname(os.path.realpath(__file__))
+    icon_path = os.path.join(current_dir, 'icon.ico')
+    app.setWindowIcon(QIcon(icon_path))
     window = MainWindow()
 
     # EXEC APP
